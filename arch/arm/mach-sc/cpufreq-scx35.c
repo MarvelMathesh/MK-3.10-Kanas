@@ -170,18 +170,30 @@ static unsigned int get_mcu_clk_freq(void)
 #ifndef CONFIG_SC8830_CUSTOM_FREQ
 static struct cpufreq_table_data sc8830_cpufreq_table_data_cs = {
 	.freq_tbl = {
-		{0, 1200000},
-		{1, 1000000},
-		{2, SHARK_TDPLL_FREQUENCY},
-		{3, 600000},
-		{4, CPUFREQ_TABLE_END},
+		{0, 1500000},
+		{1, 1400000},
+		{2, 1300000},
+		{3, 1200000},
+		{4, 1000000},
+		{5, SHARK_TDPLL_FREQUENCY},
+		{6, 600000},
+		{7, 500000},
+		{8, 300000},
+		{9, 200000},
+		{10, CPUFREQ_TABLE_END},
 	},
 	.vddarm_mv = {
+		1350000,
 		1300000,
+		1250000,
 		1200000,
 		1150000,
 		1100000,
+		1075000,
+		1050000,
 		1000000,
+		875000,
+		875000,
 	},
 };
 #endif
